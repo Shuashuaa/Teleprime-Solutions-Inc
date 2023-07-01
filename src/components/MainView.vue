@@ -275,7 +275,7 @@
                             <div style="width: 90%; padding-top: 50px; padding-bottom: 40px; border-radius: 5px; background-color: #1B382A;">
                                 <div class="d-block d-sm-none" style="width: 90% ; display: flex;">	
                                     <div style="text-align: left;">
-                                        <p class="regular" style="margin: 0; color: #D8EADA;">what we do</p>
+                                        <p class="regular" style="margin: 0; color: #D8EADA;">we support</p>
                                         <h1 class="bold" style="color: #D8EADA;">Industries</h1>
                                     </div>
                                     <v-spacer/>
@@ -300,7 +300,7 @@
                                 <!-- pc -->
                                 <div class="d-none d-sm-flex" style="width: 90% ; display: flex;">	
                                     <div style="text-align: left;">
-                                        <p class="regular" style="margin: 0; color: #D8EADA;">what we do</p>
+                                        <p class="regular" style="margin: 0; color: #D8EADA;">we support</p>
                                         <h1 class="bold" style="color: #D8EADA;">Industries</h1>
                                     </div>
                                     <v-spacer/>
