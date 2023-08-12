@@ -8,7 +8,9 @@
             style="display: flex: !important; justify-content: space-between !important;"
             class="d-flex d-sm-flex d-md-none"
         > 
-			<v-img max-width="160px" src="../assets/Company_gray.png"></v-img>
+            <a href="/">
+                <v-img max-width="160px" src="../assets/Company_gray.png"></v-img>
+            </a>
             <v-app-bar-nav-icon class="d-lg-none" id="drawer" @click="drawer = !drawer"></v-app-bar-nav-icon> 
         </v-app-bar>
     
@@ -19,7 +21,10 @@
         >
             <div style="width: 1000px;"></div>
             <!-- <v-icon class="mt-1" style="transform: rotate(150deg);">mdi-timer-sand-empty</v-icon> -->
-			<v-img width="50px" src="../assets/Logo_gray.png"></v-img>
+            <a href="/">
+                <v-img style="cursor: pointer;" width="50px" src="../assets/Logo_gray.png"></v-img>
+            </a>
+			
             <div style="width: 20000px; color: red;"></div>
             <div
                 class="btn"
@@ -90,7 +95,7 @@
                 <center>
                     <div style="position: relative; background-color: #efeee5;">
                         &nbsp;
-                        <v-img class="d-none d-sm-flex" style="position: relative; top: 0; left: 0;" src="../assets/Company_logo.png"></v-img>
+                        <v-img class="d-none d-sm-flex" style="position: relative; top: 0; left: 0;" src="../assets/Company_logo_c.png"></v-img>
                         <v-img class="d-flex d-sm-none" style="position: relative; top: 0; left: 0;" src="../assets/company_mobile.png"></v-img>
                         <!-- <v-img style="position: relative; top: 0; left: 0;" src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?fit=845%2C503&ssl=1"></v-img> -->
                         <!-- <div style="position: absolute; top: 27%; left: 40%;">
@@ -98,16 +103,19 @@
                             &nbsp;
                             <a href="">Talk to Us</a>
                         </div> -->
-						<div class="d-block d-sm-none" style="margin-top: -30px;">
-							<v-btn class="bold" color="#125131" dark>Explore Services</v-btn>
+						<div class="d-block d-sm-none" style="">
+							<v-btn class="bold" href="#solutions" style="text-decoration:none; color: white !important; background-color: #1b382a;">Explore Services</v-btn>
 							&nbsp;
-							<a href="/" class="medium" style="color: #125131; z-index: 2; position: relative;">Talk to Us</a>
+							<a href="#contact" class="medium" style="color: #125131; z-index: 2; position: relative;">Talk to Us</a>
 						</div>
 
-						<div class="d-none d-sm-block" style="margin-top: -50px;">
-							<v-btn x-large class="bold" color="#125131" dark>Explore Services</v-btn>
+						<div class="d-none d-sm-block" style="margin-top: -30px;">
+                            <!-- <h4 class="regular" style="margin-bottom: 20px;">``Providing <b>prime</b> results to your businesses``</h4> -->
+                            <a href="#solutions">
+                                <v-btn x-large class="bold" color="#125131" dark>Explore Services</v-btn>
+                            </a>
 							&nbsp;
-							<a href="/" class="medium" style="color: #125131; z-index: 2; position: relative;">Talk to Us</a>
+							<a href="#contact" class="medium" style="color: #125131; z-index: 2; position: relative;">Talk to Us</a>
 						</div>
 
                         <!-- Company -->
@@ -116,28 +124,34 @@
                         <div class="d-block d-sm-none" style="max-width: 800px; padding: 0 30px 0 30px; margin-top: 5%;">
                             <h1 class="bold pt-5">WHO WE ARE</h1>
                             &nbsp;
-                            <p class="regular" style="margin: 0;">As a top performer service provider in the Philippines, we offer optimum business
-                            solutions around the globe. Built with the advanced technological system in telephony,
-                            internet and other medium of communication, Teleprime Solutions Inc has become the
-                            distinguished company in telemarketing, business processing, and comprehensive digital
-                            business services.
+                            <p class="regular" style="margin: 0; font-size: 14px;">Teleprime Solutions Incorporated was established and registered on Jan 31, 2011, 
+                                and situated in the business center of the Philippines. Its mission to provide the finest business solutions worldwide with utmost confidentiality, 
+                                upholds the company’s standing in the industry.  As a top performing service provider in the country, we offer optimum business solutions here and around the globe. 
+                                Built with the advanced technological system in telephony, internet and other medium of communication, Teleprime Solutions Inc has become the distinguished company in telemarketing, 
+                                business processing, and comprehensive digital business servicing as it embodied its vision of becoming the prime provider of qualitative and quantitative business results at a very sensible cost.
                             </p>
                         </div>
                         <!-- pc -->
                         <div class="d-none d-sm-block" style="max-width: 800px; margin-top: 5%;">
                             <h1 class="bold">WHO WE ARE</h1>
                             &nbsp;
-                            <p class="regular">As a top performer service provider in the Philippines, we offer optimum business
-                            solutions around the globe. Built with the advanced technological system in telephony,
-                            internet and other medium of communication, Teleprime Solutions Inc has become the
-                            distinguished company in telemarketing, business processing, and comprehensive digital
-                            business services.
+                            <p class="regular">Teleprime Solutions Incorporated was established and registered on Jan 31, 2011, 
+                                and situated in the business center of the Philippines. Its mission to provide the finest business solutions worldwide with utmost confidentiality, 
+                                upholds the company’s standing in the industry.  As a top performing service provider in the country, we offer optimum business solutions here and around the globe. 
+                                Built with the advanced technological system in telephony, internet and other medium of communication, Teleprime Solutions Inc has become the distinguished company in telemarketing, 
+                                business processing, and comprehensive digital business servicing as it embodied its vision of becoming the prime provider of qualitative and quantitative business results at a very sensible cost.
                             </p>
                         </div>
                         &nbsp;
-                        <v-img style="border-radius: 10px;" width="1000" height="500" src="../assets/Office_Picture.jpg"></v-img>
+                        <!-- mobile -->
+                        <v-img class="d-flex d-sm-none" style="border-radius: 10px;" width="1000" height="300" src="../assets/company_banner.jpg"></v-img>
+                        <v-btn class="medium d-flex d-sm-none" @click="organizationalStructure = true;" style="margin-top: 30px; color: #1B382A; border: #1B382A 1px solid;" elevation="0" block>Organizational Structure</v-btn>
+                        <!-- pc -->
+                        <v-img class="d-none d-sm-block" style="border-radius: 10px;" width="900" height="600" src="../assets/company_banner.jpg"></v-img>
+                        <v-btn class="medium d-none d-sm-block" @click="organizationalStructure = true;" style="margin-top: 30px; color: #1B382A; border: #1B382A 1px solid;" elevation="0" block>Organizational Structure</v-btn>
+                        <!-- <v-img style="border-radius: 10px;" width="1000" height="500" src="../assets/Office_Picture.jpg"></v-img> -->
                         <!-- <v-img style="border-radius: 10px;" width="1000" height="500" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRweTCF-rdrKdxHw3y7nloAeDGXK9JJXehr4qjb76kh0e-9zyjW5sjslarnAdcqu36IF_Q&usqp=CAU"></v-img> -->
-                        <div class="d-block d-sm-none" style="margin-top: 60px; padding-top: 2%; padding-bottom: 2%; justify-content: center; display: flex; background-color: #1B382A;">
+                        <div class="d-block d-sm-none" style="margin-top: 30px; padding-top: 2%; padding-bottom: 2%; justify-content: center; display: flex; background-color: #1B382A;">
                             <div>
                                 <h1 style="color: #D8EADA; font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 50px;">
                                     <v-icon class="mb-2" x-large color="#D8EADA">mdi-arrow-up-drop-circle-outline</v-icon>100
@@ -157,7 +171,7 @@
                             </div>
                         </div> 
                         <!-- pc -->
-                        <div class="d-none d-sm-flex" style="margin-top: 60px; padding-top: 2%; padding-bottom: 2%; justify-content: center; display: flex; background-color: #1B382A;">
+                        <div class="d-none d-sm-flex" style="margin-top: 30px; padding-top: 2%; padding-bottom: 2%; justify-content: center; display: flex; background-color: #1B382A;">
                             <div>
                                 <h1 style="color: #D8EADA; font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 50px;">
                                     <v-icon large color="white">mdi-arrow-up-drop-circle-outline</v-icon>100
@@ -189,7 +203,7 @@
                                         <h1 class="bolder">Solutions</h1>
                                     </div>
                                     <div class="d-block" style="justify-content:center; display:flex; margin-bottom: 25px;">
-                                        <div class="mt-5" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A; margin-right:30px;">
+                                        <div class="mt-5" @click="telemarketingDetails = true" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A; margin-right:30px;">
                                             <div style="padding-top: 25px; padding-bottom: 25px;">
                                                 <p class="regular" style="color: #D8EADA;">Telemarketing</p>
                                             </div>
@@ -198,7 +212,7 @@
                                                 <!-- <v-img style="margin-left: auto !important;" width="150" src="https://developers.google.com/static/maps/documentation/streetview/images/error-image-generic.png"></v-img> -->
                                             </div>
                                         </div>
-                                        <div class="mt-10" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A;">
+                                        <div class="mt-10" @click="advanceSolutions = true" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A;">
                                             <div style="padding-top: 25px; padding-bottom: 25px;">
                                                 <p class="regular" style="color: #D8EADA;">Advance Solutions</p>
                                             </div>
@@ -207,7 +221,7 @@
                                                 <!-- <v-img style="margin-left: auto !important;" width="150" src="https://developers.google.com/static/maps/documentation/streetview/images/error-image-generic.png"></v-img> -->
                                             </div>
                                         </div>
-                                        <div class="mt-10" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A;">
+                                        <div class="mt-10" @click="businessConsulting = true" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A;">
                                             <div style="padding-top: 25px; padding-bottom: 25px;">
                                                 <p class="regular" style="color: #D8EADA;">Business Consulting</p>
                                             </div>
@@ -218,21 +232,20 @@
                                         </div>
                                     </div>
                                     <div class="mt-10">
-                                        <v-btn class="medium" style="border: 1px #1B382A solid; " large>Talk to Us</v-btn>	
+                                        <v-btn href="#contact" class="medium" style="border: 1px #1B382A solid; " large>Talk to Us</v-btn>	
                                     </div>		
                                 </div>
                             </div>
                             <!-- pc solutions -->
                             <div class="d-none d-sm-block" style="width: 90%; height:500px; padding-top: 50px; border-radius: 5px; background-color: #D8EADA;">
-                                <!-- pc -->
                                 <div style="width: 70%; background-color: ;">
                                     
-                                    <div style="text-align: left;">
+                                    <div style="text-align: left; margin-bottom: 10px;">
                                         <p class="medium" style="margin: 0;">what we do</p>
                                         <h1 class="bolder">Solutions</h1>
                                     </div>
                                     <div style="justify-content:center; display:flex; margin-bottom: 25px;">
-                                        <div style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A; margin-right:30px;">
+                                        <div class="telemarketing solutions" @click="telemarketingDetails = true" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A; margin-right:30px;">
                                             <div style="padding-top: 25px; padding-bottom: 25px;">
                                                 <p class="regular" style="color: #D8EADA;">Telemarketing</p>
                                             </div>
@@ -241,7 +254,7 @@
                                                 <!-- <v-img style="margin-left: auto !important;" width="150" src="https://developers.google.com/static/maps/documentation/streetview/images/error-image-generic.png"></v-img> -->
                                             </div>
                                         </div>
-                                        <div style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A;">
+                                        <div class="advanceSolutions solutions" @click="advanceSolutions = true" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A;">
                                             <div style="padding-top: 25px; padding-bottom: 25px;">
                                                 <p class="regular" style="color: #D8EADA;">Advance Solutions</p>
                                             </div>
@@ -250,7 +263,7 @@
                                                 <!-- <v-img style="margin-left: auto !important;" width="150" src="https://developers.google.com/static/maps/documentation/streetview/images/error-image-generic.png"></v-img> -->
                                             </div>
                                         </div>
-                                        <div style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A; margin-left:30px;">
+                                        <div class="businessConsulting solutions" @click="businessConsulting = true" style="border-radius: 5px; width: 250px; height:250px; background-color: #1B382A; margin-left:30px;">
                                             <div style="padding-top: 25px; padding-bottom: 25px;">
                                                 <p class="regular" style="color: #D8EADA;">Business Consulting</p>
                                             </div>
@@ -261,7 +274,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <v-btn class="medium" style="border: 1px #1B382A solid; " large>Talk to Us</v-btn>	
+                                        <v-btn href="#contact" class="medium" style="border: 1px #1B382A solid; " large>Talk to Us</v-btn>	
                                     </div>		
                                 </div>
 								<!-- <div id="industries"></div> -->
@@ -299,7 +312,7 @@
                                 </div>
                                 <!-- pc -->
                                 <div class="d-none d-sm-flex" style="width: 90% ; display: flex;">	
-                                    <div style="text-align: left;">
+                                    <div style="text-align: left; margin-right: 30px;">
                                         <p class="regular" style="margin: 0; color: #D8EADA;">we support</p>
                                         <h1 class="bold" style="color: #D8EADA;">Industries</h1>
                                     </div>
@@ -323,7 +336,78 @@
                                     </div>
                                 </div>
                             </div>
-							<div id="careers"></div>
+                        </div>
+
+                        <!-- Partners -->
+
+                        <div style="margin-top: 50px;">
+                            <p class="regular" style="margin: 0; color: #004323;">trusted by our partners</p>
+                            <h1 class="bold" style="margin-bottom: 10px; color: #004323;">Partners</h1>
+                            <!-- mobile -->
+                            <v-card class="d-flex d-sm-flex d-lg-none" style="display: flex; flex-wrap: wrap;" elevation="0">
+                                <v-card style="flex: 40% !important;" elevation="0">
+                                    <v-img aspect-ratio="2" contain src="../assets/partners/LAFLER_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card style="flex: 40% !important" elevation="0">
+                                    <v-img aspect-ratio="2" contain src="../assets/partners/Pathland.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card style="flex: 40% !important" elevation="0">
+                                    <v-img aspect-ratio="2" contain src="../assets/partners/shark_bottle.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card style="flex: 40% !important" elevation="0">
+                                    <v-img aspect-ratio="2" contain src="../assets/partners/Trend_Artisans_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card href="https://nexwarekitchen.com/shop/" style="flex: 40% !important" elevation="0">
+                                    <v-img aspect-ratio="2" contain src="../assets/partners/NexWare_colored.png">
+                                    </v-img>
+                                </v-card>
+                                <v-card href="https://www.comfortlivingph.com/" style="flex: 40% !important" elevation="0">
+                                    <v-img aspect-ratio="2" contain src="../assets/partners/Comfort_Living_ph_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card href="https://www.rcbc.com/" style="flex: 40% !important" elevation="0">
+                                    <v-img aspect-ratio="2" contain src="../assets/partners/rcbc_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                            </v-card>
+
+                            <!-- pc -->
+
+                            <v-card class="d-none d-sm-none d-lg-flex" style="display: flex; flex-wrap: wrap;" elevation="0">
+                                <v-card style="flex: 1 0 21% !important;" elevation="0">
+                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/LAFLER_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card style="flex: 1 0 21% !important;" elevation="0">
+                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Pathland.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card style="flex: 1 0 21% !important;" elevation="0">
+                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/shark_bottle.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card style="flex: 1 0 21% !important;" elevation="0">
+                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Trend_Artisans_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card href="https://nexwarekitchen.com/shop/" style="flex: 1 0 21% !important;" elevation="0">
+                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/NexWare_colored.png">
+                                    </v-img>
+                                </v-card>
+                                <v-card href="https://www.comfortlivingph.com/" style="flex: 1 0 21% !important;" elevation="0">
+                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Comfort_Living_ph_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                                <v-card href="https://www.rcbc.com/" style="flex: 1 0 21% !important;" elevation="0">
+                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/rcbc_colored.jpg">
+                                    </v-img>
+                                </v-card>
+                            </v-card>
+                            <div id="careers"></div>
                         </div>
 
                         <!-- careers -->
@@ -334,16 +418,21 @@
                                     <v-img style="width: 100%; height: 200px" src="../assets/corporate.jpeg"></v-img>
                                     <!-- <v-img style="width: 100%; height: 200px" src="https://developers.google.com/static/maps/documentation/streetview/images/error-image-generic.png"></v-img> -->
                                 </div>
+                                <!-- mobile -->
                                 <div style="padding-left: 10%; padding-right: 10%; padding-top: 8%; padding-bottom: 5%;">
                                     <div style="text-align: left;">
                                         <p class="regular" style="margin: 0; color: #004323;">careers</p>
-                                        <h1 class="bold" style="color: #004323;">Why Join Us?</h1>
-                                        <p class="regular" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare, orci vel egestas</p>
-                                        <p class="medium" style="color: #004323;"><b>we are looking for you</b></p>
-                                        <div class="medium" style="background-color: #efeee5; font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Account Specialists</div>
-                                        <div class="medium" style="background-color: #efeee5; font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Product Manager</div>
-                                        <v-btn elevation="3" class="regular mb-2" block style="color: #e4f0fb; background-color: #004323;" large>View Openings</v-btn>
-                                        <v-btn class="bold" style="border: 1px #1B382A solid;" elevation="3" block large>Apply Now!</v-btn>
+                                        <!-- <h1 class="bold" style="color: #004323;">Why Join Us?</h1> -->
+                                        <h1 class="bold" style="color: #004323;">Join Our Team!</h1>
+                                        <p class="regular mt-5" >we are looking for you</p>
+                                        <!-- <p class="regular" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare, orci vel egestas</p>
+                                        <p class="medium" style="color: #004323;"><b>we are looking for you</b></p> -->
+                                        <div @click="AccountSpecialistsDialog = true;" class="medium" style="background-color: #efeee5; font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Account Specialists</div>
+                                        <div @click="SalesVerifierDialog = true;" class="medium" style="background-color: #efeee5; font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Sales Verifier</div>
+                                        <!-- <v-btn elevation="3" class="regular mb-2" block style="color: #e4f0fb; background-color: #004323;" large>learn More
+                                            <v-icon>mdi-information-outline</v-icon>
+                                        </v-btn> -->
+                                        <v-btn @click="ApplyNowDialog = true;" class="bold" style="color: #e4f0fb; background-color: #004323;" elevation="3" block large>Apply Now!</v-btn>
                                     </div>
                                 </div>
                             </div>
@@ -353,16 +442,20 @@
                                     <v-img style="width: 100%; height: 720px" src="../assets/corporate.jpeg"></v-img>
                                     <!-- <v-img style="width: 100%; height: 720px" src="https://developers.google.com/static/maps/documentation/streetview/images/error-image-generic.png"></v-img> -->
                                 </div>
-                                <div style="width: 50%; padding-left: 10%; padding-right: 5%; padding-top: 8%;">
+                                <div style="width: 50%; padding-left: 10%; padding-right: 5%; padding-top: 90px;">
                                     <div style="text-align: left;">
                                         <p class="regular" style="margin: 0; color: #004323;">careers</p>
-                                        <h1 class="bold" style="color: #004323;">Why Join Us?</h1>
-                                        <p class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare, orci vel egestas</p>
-                                        <p class="medium" style="color: #004323;"><b>we are looking for you</b></p>
-                                        <div class="medium" style="font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Account Specialists</div>
-                                        <div class="medium" style="font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Product Manager</div>
-                                        <v-btn class="regular mb-2" block style="color: #e4f0fb; background-color: #004323;" large>View Openings</v-btn>
-                                        <v-btn class="bold" block style="border: 1px #1B382A solid;" large>Apply Now!</v-btn>
+                                        <!-- <h1 class="bold" style="color: #004323;">Why Join Us?</h1> -->
+                                        <h1 class="bold" style="color: #004323;">Join Our Team!</h1>
+                                        <!-- <p class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare, orci vel egestas</p>
+                                        <p class="medium" style="color: #004323;"><b>we are looking for you</b></p> -->
+                                        <p class="regular mt-5">we are looking for you</p>
+                                        <div @click="AccountSpecialistsDialog = true;" class="AccountSpecialistsDialog medium" style="font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Account Specialists</div>
+                                        <div @click="SalesVerifierDialog = true;" class="SalesVerifierDialog medium" style="font-size: 20px; font-weight: bold; text-align: left; padding: 10px 0 0 10px; margin-bottom: 10px; border-radius: 5px; height: 100px; border: solid 1px #004323;">Sales Verifier</div>
+                                        <!-- <v-btn class="regular mb-2" block style="color: #004323; border: #004323 1px solid;" large>learn More 
+                                            <v-icon>mdi-information-outline</v-icon>
+                                        </v-btn> -->
+                                        <v-btn @click="ApplyNowDialog = true;" class="bold" block style="color: #e4f0fb; background-color: #004323;" large>Apply Now!</v-btn>
                                     </div>
                                 </div>
                             </div>
@@ -448,7 +541,7 @@
 
                         <!-- footer -->
                         
-                        <div class="d-block d-sm-block d-md-none" style="margin-top: 20px; padding-top: 20px; background-color: #00180D">
+                        <div class="d-block d-sm-block d-md-none" style="margin-top: 30px; padding-top: 20px; background-color: #00180D">
                             <!-- <v-row> -->
                                 <v-col>
                                     <v-img width="500" src="../assets/tele_white.png"></v-img>
@@ -472,7 +565,7 @@
                             <!-- </v-row> -->
                         </div>	
                         <!-- pc -->
-                        <div class="d-none d-sm-none d-md-block" style="margin-top: 20px;  height: 200px; background-color: #00180D;">
+                        <div class="d-none d-sm-none d-md-block" style="margin-top: 50px;  height: 200px; background-color: #00180D;">
                             <v-row>
                                 <v-col>
                                     <v-img class="pt-1" width="430" src="../assets/tele_white.png"></v-img>
@@ -502,6 +595,285 @@
                 </center>
             </div>
         </div>
+
+        <v-dialog
+            v-model="telemarketingDetails"
+            width="500"
+            persistent
+            >
+
+            <v-card>
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                    Telemarketing
+                </v-card-title>
+                
+                &nbsp;
+
+                <v-card-text class="regular" style="font-size: 16px;">
+                A business solution that offers, but not limited to inbound, outbound, lead generation and sales to clients that entails marketing research, telesales, surveying. Our aim is to address the clients’ need-based selling, market research, and other telemarketing activities. Teleprime Solutions Inc is determined to deliver excellent solutions according to the clients’ business objectives and goals.
+                </v-card-text>
+
+                <v-divider></v-divider>
+
+                <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                    color="#1b382a"
+                    text
+                    @click="telemarketingDetails = false"
+                >
+                    <v-icon>
+                        mdi-close
+                    </v-icon>
+                    Close
+                </v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
+
+        <v-dialog
+            v-model="businessConsulting"
+            width="500"
+            persistent
+            >
+
+            <v-card>
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                Business Consulting
+                </v-card-title>
+                
+                &nbsp;
+
+                <v-card-text class="regular" style="font-size: 16px;">
+                Our business consulting services focus on the enterprise most concerning issues and opportunities: strategy, marketing, organization, operations, technology, transformation, digital, advanced analytics, corporate finance, mergers & acquisitions, and sustainability across all industries worldwide. We deliver functional solutions, faster and more adaptable client-focused systems to achieve business extraordinary results. Teleprime Solutions Inc guarantees that services are made not only to deliver, but also to give prime results that exceed the clients’ expectations.
+                </v-card-text>
+
+                <v-divider></v-divider>
+
+                <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                    color="#1b382a"
+                    text
+                    @click="businessConsulting = false"
+                >
+                    <v-icon>
+                        mdi-close
+                    </v-icon>
+                    Close
+                </v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
+
+        <v-dialog
+            v-model="advanceSolutions"
+            width="500"
+            persistent
+            >
+
+            <v-card>
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                Advance Solutions
+                </v-card-title>
+                
+                &nbsp;
+
+                <v-card-text class="regular" style="font-size: 16px;">
+                Teleprime Solutions Inc understands the enterprise needs amidst the fast-changing economic situation worldwide. Our aim is to help your business operate more efficiently. Teleprime Solutions Inc will give you boundless assistance from procurement of location, construction, business license and permits acquisition, 9(g) working visa for alien employees, trademark registration, and many more. With technical and intellectual expertise, Teleprime Solutions Inc promises to bring solutions and strategic alignment to clients’ business objectives and needs.
+                </v-card-text>
+
+                <v-divider></v-divider>
+
+                <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                    color="#1b382a"
+                    text
+                    @click="advanceSolutions = false"
+                >
+                    <v-icon>
+                        mdi-close
+                    </v-icon>
+                    Close
+                </v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
+
+        <!-- <v-img style="margin-left: auto !important;" width="150" src="../assets/icons/question_answer_black_24dp.svg"></v-img>
+        <v-img style="margin-left: auto !important;" width="150" src="../assets/icons/insights_black_24dp.svg"></v-img>
+        <v-img style="margin-left: auto !important;" width="150" src="../assets/icons/headset_mic_black_24dp.svg"></v-img> -->
+
+        <v-dialog
+            v-model="AccountSpecialistsDialog"
+            width="500"
+            persistent
+            >
+
+            <v-card>
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                Account Specialists
+                </v-card-title>
+                
+                &nbsp;
+
+                <v-card-text class="regular" style="font-size: 16px;">
+                Responsible for selling some products or service to the customers through telephonic calls. 
+                The outbound call center executives are not only assigned the task of selling products or services, 
+                but they may be required for promotion of a product, taking feedback from customers, 
+                or for providing some information to people over telephone.
+                </v-card-text>
+
+                <v-divider></v-divider>
+
+                <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                    color="#1b382a"
+                    text
+                    @click="AccountSpecialistsDialog = false"
+                >
+                    <v-icon>
+                        mdi-close
+                    </v-icon>
+                    Close
+                </v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
+
+        <v-dialog
+            v-model="SalesVerifierDialog"
+            width="500"
+            persistent
+            >
+
+            <v-card>
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                Sales Verifier
+                </v-card-title>
+                
+                &nbsp;
+
+                <v-card-text class="regular" style="font-size: 16px;">
+                Effectively validate sales, activation, etc. 
+                for accuracy and reports discrepancies in a timely and appropriate manner.
+                </v-card-text>
+
+                <v-divider></v-divider>
+
+                <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                    color="#1b382a"
+                    text
+                    @click="SalesVerifierDialog = false"
+                >
+                    <v-icon>
+                        mdi-close
+                    </v-icon>
+                    Close
+                </v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
+
+        <!-- /////////////////////// Apply now ////////////////////// -->
+
+        <v-dialog
+            v-model="ApplyNowDialog"
+            width="500"
+            persistent
+            >
+
+            <v-card>
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                Form
+                <v-spacer/>
+                <v-btn
+                    color="#d8eada"
+                    text
+                    @click="ApplyNowDialog = false"
+                    icon
+                    large
+                >
+                    <v-icon>
+                        mdi-close
+                    </v-icon>
+                </v-btn>
+                </v-card-title>
+                
+                &nbsp;
+
+                <v-card-text class="regular" style="font-size: 16px;">
+                <div style="text-align: left;">
+                    <v-select
+                        v-model="career"
+                        :rules="[() => !!career || 'This field is required']"
+                        class="mt-2 mb-2"  
+                        hide-details 
+                        style="background-color: white;"
+                        :items="careers"
+                        label="You are applying for?"
+                        outlined
+                    ></v-select>
+                    <v-text-field 
+                        v-model="FullName"
+                        :rules="[() => !!FullName || 'This field is required']"
+                        class="mb-2" outlined label="Full Name" hide-details="auto" style="background-color: white;"></v-text-field>
+                    <v-text-field 
+                        prepend-inner-icon="mdi-email"
+                        placeholder="Email"
+                        :rules="[rules.required, rules.email]"
+                        class="mb-2" outlined label="Email" hide-details="auto" style="background-color: white;"></v-text-field>
+                    <v-text-field 
+                        v-model="Phone"
+                        :rules="[rules.required, rules.numberOnly]"
+                        class="mb-2" outlined label="Phone" hide-details="auto" style="background-color: white;"></v-text-field>
+                    <v-textarea 
+                        v-model="Message"
+                        :rules="[() => !!Message || 'This field is required']"
+                        class="mb-2" outlined label="Message" hide-details="auto" style="background-color: white;"></v-textarea>
+                    <v-btn class="bold" large block style="background-color: #004323; color: white;">Submit</v-btn>
+                </div>
+                </v-card-text>
+            </v-card>
+        </v-dialog>
+
+        <v-dialog
+            v-model="organizationalStructure"
+            width="500"
+            persistent
+            >
+
+            <v-card>
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                Organizational <br>Structure
+                <v-spacer/>
+                <v-btn
+                    color="#d8eada"
+                    text
+                    @click="organizationalStructure = false"
+                    icon
+                    large
+                >
+                    <v-icon>
+                        mdi-close
+                    </v-icon>
+                </v-btn>
+                </v-card-title>
+                
+                &nbsp;
+
+                <v-card class="d-none d-sm-flex">
+                    <v-img width="600" height="800" src="../assets/Organizational_Chart.png"></v-img>
+                </v-card>
+                <v-card class="d-flex d-sm-none">
+                    <v-img width="500" height="650" src="../assets/Organizational_Chart.png"></v-img>
+                </v-card>
+            </v-card>
+        </v-dialog>
     </v-app>
   	
 </template>
@@ -511,6 +883,29 @@
     name: 'TeleprimeSolutionsInc',
 
     data: () => ({
+        organizationalStructure: false,
+        SalesVerifierDialog: false,
+        AccountSpecialistsDialog: false,
+        telemarketingDetails: false,
+        ApplyNowDialog: false,
+        careers: ['Account Specialists','Sales Verifier'],
+        career: '',
+        FullName: '',
+        Phone: '',
+        Message: '',
+        rules: {
+            required: value => !!value || 'Required.',
+            counter: value => value.length <= 20 || 'Max 20 characters',
+            email: value => {
+                const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                return pattern.test(value) || 'Invalid e-mail.'
+            },   
+            numberOnly: value => {
+                return /^\d*\+?\d*$/.test(value) || 'Invalid Phone Number';
+            }
+        },
+        businessConsulting: false,
+        advanceSolutions: false,
 		drawer: false,
 		items:[
 			{text:'Home', icon:'mdi-home', to:'/'},
@@ -594,6 +989,45 @@ html {
 .boldest{
 	font-family: 'Poppins', sans-serif !important; 
     font-weight: 900 !important;
+}
+
+.solutions:hover{
+    cursor: pointer;
+}
+
+.imgPartners {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.imgPartners:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    cursor: pointer;
+}   
+
+.telemarketing:hover{
+    box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.3);
+}
+
+.advanceSolutions:hover{
+    box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.3);
+}
+
+.businessConsulting:hover{
+    box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.3);
+}
+
+.AccountSpecialistsDialog:hover{
+    color: rgb(216, 234, 218);
+    background-color:rgb(27, 56, 42);
+    cursor: pointer;
+}
+
+.SalesVerifierDialog:hover{
+    color: rgb(216, 234, 218);
+    background-color: rgb(27, 56, 42);
+    cursor: pointer;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
