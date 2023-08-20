@@ -556,10 +556,18 @@
                                         <v-icon color="white">mdi-wechat</v-icon>
                                         
                                     <div style="display: flex; justify-content: center; margin-top: 10%;">
-                                        <p id="company" class="regular mr-5" style="color: white;">Company</p>
-                                        <p id="solutions" class="regular mr-5" style="color: white;">Solutions</p>
-                                        <p id="industries" class="regular mr-5" style="color: white;">Industries</p>
-                                        <p id="careers" class="regular" style="color: white;">Careers</p>
+                                        <a style="text-decoration: none;" href="#company">
+                                            <p id="company" class="regular mr-5" style="color: white;">Company</p>
+                                        </a>
+                                        <a style="text-decoration: none;" href="#solutions">
+                                            <p id="solutions" class="regular mr-5" style="color: white;">Solutions</p>
+                                        </a>
+                                        <a style="text-decoration: none;" href="#industries">
+                                            <p id="industries" class="regular mr-5" style="color: white;">Industries</p>
+                                        </a>
+                                        <a style="text-decoration: none;" href="#careers">
+                                            <p id="careers" class="regular" style="color: white;">Careers</p>    
+                                        </a>
                                     </div>
                                 </v-col>
                             <!-- </v-row> -->
@@ -583,10 +591,22 @@
                                         <v-icon color="white">mdi-wechat</v-icon>
                                         
                                     <div style="display: flex; justify-content: end; margin-top: 20px;">
-                                        <p id="company" class="regular mr-5" style="color: white;">Company</p>
+                                        <!-- <p id="company" class="regular mr-5" style="color: white;">Company</p>
                                         <p id="solutions" class="regular mr-5" style="color: white;">Solutions</p>
                                         <p id="industries" class="regular mr-5" style="color: white;">Industries</p>
-                                        <p id="careers" class="regular" style="color: white;">Careers</p>
+                                        <p id="careers" class="regular" style="color: white;">Careers</p> -->
+                                        <a style="text-decoration: none;" href="#company">
+                                            <p id="company" class="regular mr-5" style="color: white;">Company</p>
+                                        </a>
+                                        <a style="text-decoration: none;" href="#solutions">
+                                            <p id="solutions" class="regular mr-5" style="color: white;">Solutions</p>
+                                        </a>
+                                        <a style="text-decoration: none;" href="#industries">
+                                            <p id="industries" class="regular mr-5" style="color: white;">Industries</p>
+                                        </a>
+                                        <a style="text-decoration: none;" href="#careers">
+                                            <p id="careers" class="regular" style="color: white;">Careers</p>    
+                                        </a>
                                     </div>
                                 </v-col>
                             </v-row>
