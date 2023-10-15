@@ -95,7 +95,7 @@
                 <center>
                     <div style="position: relative; background-color: #efeee5;">
                         &nbsp;
-                        <v-img class="d-none d-sm-flex" style="position: relative; top: 0; left: 0;" src="../assets/Company_logo_c.png"></v-img>
+                        <v-img data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="100" data-aos-duration="1000" class="d-none d-sm-flex" style="position: relative; top: 0; left: 0;" src="../assets/Company_logo_c.png"></v-img>
                         <v-img class="d-flex d-sm-none" style="position: relative; top: 0; left: 0;" src="../assets/company_mobile.png"></v-img>
                         <!-- <v-img style="position: relative; top: 0; left: 0;" src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?fit=845%2C503&ssl=1"></v-img> -->
                         <!-- <div style="position: absolute; top: 27%; left: 40%;">
@@ -109,7 +109,7 @@
 							<a href="#contact" class="medium" style="color: #125131; z-index: 2; position: relative;">Talk to Us</a>
 						</div>
 
-						<div class="d-none d-sm-block" style="margin-top: -30px;">
+						<div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" data-aos-duration="1000" class="d-none d-sm-block" style="margin-top: -30px;">
                             <!-- <h4 class="regular" style="margin-bottom: 20px;">``Providing <b>prime</b> results to your businesses``</h4> -->
                             <a href="#solutions">
                                 <v-btn x-large class="bold" color="#125131" dark>Explore Services</v-btn>
@@ -132,7 +132,7 @@
                             </p>
                         </div>
                         <!-- pc -->
-                        <div class="d-none d-sm-block" style="max-width: 800px; margin-top: 5%;">
+                        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="1000" class="d-none d-sm-block" style="max-width: 800px; margin-top: 5%;">
                             <h1 class="bold">WHO WE ARE</h1>
                             &nbsp;
                             <p class="regular">Teleprime Solutions Incorporated was established and registered on Jan 31, 2011, 
@@ -147,7 +147,8 @@
                         <v-img class="d-flex d-sm-none" style="border-radius: 10px;" width="1000" height="300" src="../assets/company_banner.jpg"></v-img>
                         <v-btn class="medium d-flex d-sm-none" @click="organizationalStructure = true;" style="margin-top: 30px; color: #1B382A; border: #1B382A 1px solid;" elevation="0" block>Organizational Structure</v-btn>
                         <!-- pc -->
-                        <v-img class="d-none d-sm-block" style="border-radius: 10px;" width="900" height="600" src="../assets/company_banner.jpg"></v-img>
+                        <v-parallax height="800" src="../assets/company_banner.jpg"></v-parallax>
+                        <!-- <v-img class="d-none d-sm-block" style="border-radius: 10px;" width="900" height="600" src="../assets/company_banner.jpg"></v-img> -->
                         <v-btn class="medium d-none d-sm-block" @click="organizationalStructure = true;" style="margin-top: 30px; color: #1B382A; border: #1B382A 1px solid;" elevation="0" block>Organizational Structure</v-btn>
                         <!-- <v-img style="border-radius: 10px;" width="1000" height="500" src="../assets/Office_Picture.jpg"></v-img> -->
                         <!-- <v-img style="border-radius: 10px;" width="1000" height="500" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRweTCF-rdrKdxHw3y7nloAeDGXK9JJXehr4qjb76kh0e-9zyjW5sjslarnAdcqu36IF_Q&usqp=CAU"></v-img> -->
@@ -172,19 +173,19 @@
                         </div> 
                         <!-- pc -->
                         <div class="d-none d-sm-flex" style="margin-top: 30px; padding-top: 2%; padding-bottom: 2%; justify-content: center; display: flex; background-color: #1B382A;">
-                            <div>
+                            <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" data-aos-duration="1200" >
                                 <h1 style="color: #D8EADA; font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 50px;">
                                     <v-icon large color="white">mdi-arrow-up-drop-circle-outline</v-icon>100
                                 </h1>
                                 <p class="regular" style="color: #D8EADA; text-align: center; ">Employees</p>
                             </div>
-                            <div class="ml-10">
+                            <div class="ml-10" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600" data-aos-duration="1200">
                                 <h1 style="color: #D8EADA; font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 50px;">SEC</h1>
                                 <p class="regular" style="color: #D8EADA;">Registered 
                                     <br>January 31, 2011</p>
                                 <p style="color: #D8EADA;"></p>
-                            </div>
-                                <div class="ml-10">
+                            </div >
+                            <div class="ml-10" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="700" data-aos-duration="1400">
                                 <h1 style="color: #D8EADA; font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 50px;">TM</h1>
                                 <p class="regular" style="color: #D8EADA;">Registered No:
                                     <br>4/2022/00527232</p>
@@ -238,7 +239,7 @@
                             </div>
                             <!-- pc solutions -->
                             <div class="d-none d-sm-block" style="width: 90%; height:500px; padding-top: 50px; border-radius: 5px; background-color: #D8EADA;">
-                                <div style="width: 70%; background-color: ;">
+                                <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-duration="1400" style="width: 70%; background-color: ;">
                                     
                                     <div style="text-align: left; margin-bottom: 10px;">
                                         <p class="medium" style="margin: 0;">what we do</p>
@@ -311,7 +312,7 @@
                                     </div>
                                 </div>
                                 <!-- pc -->
-                                <div class="d-none d-sm-flex" style="width: 90% ; display: flex;">	
+                                <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-duration="1000" class="d-none d-sm-flex" style="width: 90% ; display: flex;">	
                                     <div style="text-align: left; margin-right: 30px;">
                                         <p class="regular" style="margin: 0; color: #D8EADA;">we support</p>
                                         <h1 class="bold" style="color: #D8EADA;">Industries</h1>
@@ -379,31 +380,31 @@
 
                             <v-card class="d-none d-sm-none d-lg-flex" style="display: flex; flex-wrap: wrap;" elevation="0">
                                 <v-card style="flex: 1 0 21% !important;" elevation="0">
-                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/LAFLER_colored.jpg">
+                                    <v-img data-aos="fade-down" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="1000" class="imgPartners" aspect-ratio="2" contain src="../assets/partners/LAFLER_colored.jpg">
                                     </v-img>
                                 </v-card>
                                 <v-card style="flex: 1 0 21% !important;" elevation="0">
-                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Pathland.jpg">
+                                    <v-img data-aos="fade-down" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="1200" class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Pathland.jpg">
                                     </v-img>
                                 </v-card>
                                 <v-card style="flex: 1 0 21% !important;" elevation="0">
-                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/shark_bottle.jpg">
+                                    <v-img data-aos="fade-down" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="1400" class="imgPartners" aspect-ratio="2" contain src="../assets/partners/shark_bottle.jpg">
                                     </v-img>
                                 </v-card>
                                 <v-card style="flex: 1 0 21% !important;" elevation="0">
-                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Trend_Artisans_colored.jpg">
+                                    <v-img data-aos="fade-down" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="1600" class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Trend_Artisans_colored.jpg">
                                     </v-img>
                                 </v-card>
                                 <v-card href="https://nexwarekitchen.com/shop/" style="flex: 1 0 21% !important;" elevation="0">
-                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/NexWare_colored.png">
+                                    <v-img data-aos="fade-down" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="1800" class="imgPartners" aspect-ratio="2" contain src="../assets/partners/NexWare_colored.png">
                                     </v-img>
                                 </v-card>
                                 <v-card href="https://www.comfortlivingph.com/" style="flex: 1 0 21% !important;" elevation="0">
-                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Comfort_Living_ph_colored.jpg">
+                                    <v-img data-aos="fade-down" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="2000" class="imgPartners" aspect-ratio="2" contain src="../assets/partners/Comfort_Living_ph_colored.jpg">
                                     </v-img>
                                 </v-card>
                                 <v-card href="https://www.rcbc.com/" style="flex: 1 0 21% !important;" elevation="0">
-                                    <v-img class="imgPartners" aspect-ratio="2" contain src="../assets/partners/rcbc_colored.jpg">
+                                    <v-img data-aos="fade-down" data-aos-easing="ease" data-aos-delay="400" data-aos-duration="2200" class="imgPartners" aspect-ratio="2" contain src="../assets/partners/rcbc_colored.jpg">
                                     </v-img>
                                 </v-card>
                             </v-card>
@@ -439,7 +440,9 @@
                             <!-- pc -->
                             <div class="d-none d-sm-flex" style="display: flex;">
                                 <div style="width: 50%;">
-                                    <v-img style="width: 100%; height: 720px" src="../assets/corporate.jpeg"></v-img>
+                                    <!-- <v-parallax style="width: 100%; height: 720px" src="../assets/corporate.jpeg"></v-parallax> -->
+                                    <div class="parallax-img"></div>
+                                    <!-- <v-img class="parallax-img" style="width: 100%; height: 720px" src="../assets/corporate.jpeg"></v-img> -->
                                     <!-- <v-img style="width: 100%; height: 720px" src="https://developers.google.com/static/maps/documentation/streetview/images/error-image-generic.png"></v-img> -->
                                 </div>
                                 <div style="width: 50%; padding-left: 10%; padding-right: 5%; padding-top: 90px;">
@@ -899,6 +902,9 @@
 </template>
 
 <script>
+import AOS from 'aos';
+//Initialize manually in every divs
+AOS.init();
   export default {
     name: 'TeleprimeSolutionsInc',
 
@@ -1048,6 +1054,22 @@ html {
     color: rgb(216, 234, 218);
     background-color: rgb(27, 56, 42);
     cursor: pointer;
+}
+
+.parallax-img{
+    /* The image used */
+    background-image: url("../assets/corporate.jpeg");
+
+    /* Set a specific height */
+    min-height: 500px;
+    width: 100%; 
+    height: 720px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
