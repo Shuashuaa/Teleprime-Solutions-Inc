@@ -147,7 +147,7 @@
                         <v-img class="d-flex d-sm-none" style="border-radius: 10px;" width="1000" height="300" src="../assets/company_banner.jpg"></v-img>
                         <v-btn class="medium d-flex d-sm-none" @click="organizationalStructure = true;" style="margin-top: 30px; color: #1B382A; border: #1B382A 1px solid;" elevation="0" block>Organizational Structure</v-btn>
                         <!-- pc -->
-                        <v-parallax height="800" src="../assets/company_banner.jpg"></v-parallax>
+                        <v-parallax class="d-none d-sm-block" height="800" src="../assets/company_banner.jpg"></v-parallax>
                         <!-- <v-img class="d-none d-sm-block" style="border-radius: 10px;" width="900" height="600" src="../assets/company_banner.jpg"></v-img> -->
                         <v-btn class="medium d-none d-sm-block" @click="organizationalStructure = true;" style="margin-top: 30px; color: #1B382A; border: #1B382A 1px solid;" elevation="0" block>Organizational Structure</v-btn>
                         <!-- <v-img style="border-radius: 10px;" width="1000" height="500" src="../assets/Office_Picture.jpg"></v-img> -->
@@ -871,7 +871,7 @@
             >
 
             <v-card>
-                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada;">
+                <v-card-title class="bold" style="background-color: #1b382a; color: #d8eada; ">
                 Organizational <br>Structure
                 <v-spacer/>
                 <v-btn
@@ -889,10 +889,10 @@
                 
                 &nbsp;
 
-                <v-card class="d-none d-sm-flex">
+                <v-card class="d-none d-sm-flex" style="overflow-y: scroll;">
                     <v-img width="600" height="800" src="../assets/Organizational_Chart.png"></v-img>
                 </v-card>
-                <v-card class="d-flex d-sm-none">
+                <v-card class="d-flex d-sm-none" style="overflow-y: scroll;">
                     <v-img width="500" height="650" src="../assets/Organizational_Chart.png"></v-img>
                 </v-card>
             </v-card>
